@@ -1,0 +1,70 @@
+{
+  "name": "Fan_Controller",
+  "productName": "Fan Controller",
+  "version": "0.2.0",
+  "description": "Fan Controller",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "eslint src --color"
+  },
+  "keywords": [],
+  "author": "Pixus Technologies",
+  "license": "",
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "icon": "./src/img/fan_icon.ico",
+        "asar": true
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-wix",
+          "config": {
+            "manufacturer": "Pixus Technologies",
+            "name": "Fan Controller"
+          }
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "broadcast-address": "^1.0.2",
+    "electron-fetch": "^1.7.4",
+    "electron-log": "^4.4.6",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-unhandled": "^4.0.1",
+    "events": "^3.3.0",
+    "fs": "^0.0.1-security",
+    "htm": "^3.1.0",
+    "justgage": "^1.5.1",
+    "node-constants": "^0.0.2",
+    "node-fetch": "^2.6.7",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-input-mask": "^2.0.4",
+    "react-switch": "^6.0.0",
+    "serialport": "^10.0.0",
+    "stream": "^0.0.2",
+    "usb": "^2.3.1",
+    "usb-detection": "^4.14.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.63",
+    "@electron-forge/maker-appx": "^6.0.0-beta.63",
+    "@electron-forge/maker-deb": "^6.0.0-beta.63",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.63",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
+    "@electron-forge/maker-wix": "^6.0.0-beta.63",
+    "@electron-forge/maker-zip": "^6.0.0-beta.63",
+    "@electron-forge/publisher-github": "^6.0.0-beta.63",
+    "electron": "^16.0.8",
+    "exe-icon-extractor": "^1.0.8"
+  },
+  "private": true
+}
